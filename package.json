@@ -1,0 +1,42 @@
+{
+  "name": "journal-app",
+  "version": "1.0.0",
+  "description": "group-project 3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arielRvaldez/journal-app.git"
+  },
+  "keywords": [
+    "journal",
+    "node.js",
+    "mongoDB",
+    "graphQl"
+  ],
+  "author": "Array of Sunshine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielRvaldez/journal-app/issues"
+  },
+  "homepage": "https://github.com/arielRvaldez/journal-app#readme",
+  "dependencies": {
+    "apollo": "^2.34.0",
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "mongoose": "^8.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.0",
+    "react-router-hash-link": "^2.4.3",
+    "render": "^0.1.4",
+    "styled-components": "^6.1.8"
+  }
+}
